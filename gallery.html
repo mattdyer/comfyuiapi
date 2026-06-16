@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Image Gallery</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .gallery-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-item .caption {
+            padding: 15px;
+            text-align: center;
+            color: #34495e;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nature Image Gallery</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/Qwen-Image-2512_00025_.png" alt="Forest at sunrise">
+            <div class="caption">Forest at Sunrise</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/Qwen-Image-2512_00026_.png" alt="Mountain lake">
+            <div class="caption">Mountain Lake</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/Qwen-Image-2512_00027_.png" alt="Waterfall in jungle">
+            <div class="caption">Waterfall in Jungle</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/Qwen-Image-2512_00028_.png" alt="Desert dunes">
+            <div class="caption">Desert Dunes</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/Qwen-Image-2512_00029_.png" alt="Snowy pine forest">
+            <div class="caption">Snowy Pine Forest</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/Qwen-Image-2512_00030_.png" alt="Autumn forest">
+            <div class="caption">Autumn Forest</div>
+        </div>
+    </div>
+</body>
+</html>
