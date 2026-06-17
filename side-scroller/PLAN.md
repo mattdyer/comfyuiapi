@@ -5,14 +5,28 @@
 - [ ] **Physics Engine Decoupling**: Separate collision logic from rendering to allow for headless testing.
 - [ ] **Entity Component System (ECS)**: Refactor Player, Zombie, and Power-ups into a common `Entity` class for easier expansion.
 - [ ] **Collision Expansion**: Add detection for "Pits" (falling out of bounds) and "Spikes" (instant damage).
+- [ ] **Testing & Automation**:
+    - [ ] **Unit Testing**:
+        - [ ] Setup **Vitest** or **Jest** in the repository.
+        - [ ] Write tests for:
+            - Player movement physics.
+            - Enemy collision/death logic.
+            - Power-up duration and effect logic.
+    - [ ] **Headless Browser Testing**:
+        - [ ] Setup **Playwright**.
+        - [ ] Create automation scripts to:
+            - Verify level transitions.
+            - Simulate "Jump on Zombie" action to verify score increase.
+            - Verify "Fall in Pit" triggers Game Over.
 
-## Phase Phase 2: Environment & Level Design
+## Phase 2: Environment & Level Design
 - [ ] **Level Schema Definition**: Define a structure for platforms, gaps, and hazards.
 - [ ] **Obstacle Implementation**:
     - [ ] **Pits**: Trigger `gameover` state when player Y-coordinate exceeds ground level.
-    _ [ ] **Spikes**: Static hazards that trigger damage.
+    - [ ] **Spikes**: Static hazards that trigger damage.
     - [ ] **Moving Platforms**: Platforms that follow a predefined path.
 - [ ] **Level Progression**: Implement a level transition system (Level 1 $\rightarrow$ Level 2, etc.).
+- [ ] *Note: Ensure tests are written and run for each step.*
 
 ## Phase 3: Enemy & Power-up Expansion
 - [ ] **Advanced Enemy Types**:
@@ -22,27 +36,16 @@
     - [ ] **Speed Boost**: Temporary increase to `moveSpeed`.
     - [ ] **Shield**: Temporary immunity to enemy collisions.
     - [ ] **Double Jump**: Ability to jump once more mid-air.
+- [ ] *Note: Ensure tests are written and run for each step.*
 
 ## Phase 4: The Grand Finale (Boss Fight)
 - [ ] **Boss Entity**: A large, multi-phase entity with a health bar.
 - [ ] **Boss Patterns**: Implement phases (e.g., Phase 1: Melee, Phase 2: Projectiles).
 - [ ] **Victory Condition**: Final level completion logic.
+- [ ] *Note: Ensure tests are updated and run for each step.*
 
-## Phase 5: Testing & Automation
-- [ ] **Unit Testing**:
-    - [ ] Setup **Vitest** or **Jest** in the repository.
-    - [ ] Write tests for:
-        - Player movement physics.
-        - Enemy collision/death logic.
-        - Power-up duration and effect logic.
-- [ ] **Headless Browser Testing**:
-    - [ ] Setup **Playwright**.
-    - [ ] Create automation scripts to:
-        - Verify level transitions.
-        - Simulate "Jump on Zombie" action to verify score increase.
-        - Verify "Fall in Pit" triggers Game Over.
-
-## Phase 6: Polish & Content
+## Phase 5: Polish & Content
 - [ ] **Asset Generation**: Generate all pixel art for 10 levels' worth of variety.
 - [ ] **Audio Integration**: Implement SFX for jumping, hitting enemies, and power-ups.
 - [ ] **UI/UX**: Add Main Menu, Level Selection, and High Score persistence.
+- [ ] *Note: Ensure tests are updated and run for each step.*
