@@ -7,3 +7,5 @@
 /.claude/skills/image-generation/bin
 /.claude/skills/image-generation/lib
 /.claude/skills/image-generation/lib64
+
+/node_modules

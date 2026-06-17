@@ -1,0 +1,19 @@
+{
+  "name": "side-scroller-game",
+  "version": "1.0.0",
+  "description": "Pixel Zombie Side-Scroller",
+  "main": "game.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattdyer/comfyuiapi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+}
